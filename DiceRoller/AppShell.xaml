@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DiceRoller.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DiceRoller"
+    Shell.FlyoutBehavior="Disabled"
+    Title="DiceRoller">
+
+
+    <TabBar>
+        <ShellContent
+        Title="DiceRoller"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+        <ShellContent
+         Title="Sobre"
+         ContentTemplate="{DataTemplate local:AboutPage}"
+         Route="AboutPage"/>
+    </TabBar>
+    
+</Shell>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jl42">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DiceRoller/obj/Debug/net7.0-android/lp/111/jl/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DiceRoller/obj/Debug/net7.0-android/lp/111/jl/res.zip!/" />
+      <root url="jar://$PROJECT_DIR$/DiceRoller/obj/Debug/net7.0-android/lp/111/jl/annotations.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

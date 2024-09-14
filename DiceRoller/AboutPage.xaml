@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiceRoller.AboutPage"
+             Title="AboutPage">
+    <VerticalStackLayout Padding="40" Spacing="30">
+        <Label
+            Text="Projeto DiceRoller,realizado em sala, explorando o uso do Picker, e da função Random. Projeto realizado com base nos ensinos adquiridos na matéria de Planejamento de Aplicativos Mobile. "
+            HorizontalOptions="Center"/>
+
+        <Button
+            x:Name = "AboutButton"
+            Text = "Clique aqui para conhecer mais!"
+            WidthRequest="250"
+            Clicked = "AboutButton_Clicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

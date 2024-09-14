@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiceRoller.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center"
+            Spacing="55"
+            Padding="20,0">
+
+            <Label
+                HorizontalOptions="Center"
+                Text="ROLADOR DE DADOS"
+                FontSize="40"
+                FontAttributes="Bold"
+                HeightRequest="100"/>
+
+            <Label
+                x:Name="ResultLabel"
+                HorizontalOptions="Center"
+                Text="6"
+                FontSize="80"
+                FontAttributes="Bold"
+                HeightRequest="100"/>
+            
+            <Label
+             Text="Resultados: "
+             x:Name="DadosLabel"    
+             />
+
+
+            <Picker VerticalOptions="Center" 
+                        WidthRequest="300"
+                        Title="Quantidade de lados"
+                    x:Name="LadosPicker">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>4</x:String>
+                        <x:String>6</x:String>
+                        <x:String>8</x:String>
+                        <x:String>10</x:String>
+                        <x:String>12</x:String>
+                        <x:String>20</x:String>
+                        <x:String>100</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label
+                Text="Insira a quantidade de dados: "    
+                />
+
+                <Entry
+                x:Name="DadosEntry"
+                WidthRequest="30"
+                HeightRequest="30"
+                />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Picker VerticalOptions="Center" 
+                 WidthRequest="300"
+                 Title="Selecione um modificador para os dados:"
+                 x:Name="ModifyPicker">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>+1</x:String>
+                            <x:String>+2</x:String>
+                            <x:String>+3</x:String>
+                            <x:String>+4</x:String>
+                            <x:String>+5</x:String>
+                            <x:String>+6</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+            </HorizontalStackLayout>
+
+ 
+            
+            <Button
+                x:Name="RandomButton"
+                Text="ROLAR O DADO!"
+                WidthRequest="180"
+                Clicked="RandomButton_Clicked"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
